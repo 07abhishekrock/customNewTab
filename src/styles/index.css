@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
+
+:html{
+     --primary-font : 'Sora' , sans-serif;
+     --background-color : white;
+     --primary-color : black;
+
+     --highlighted-background-color : #232323;
+     
+     --unchecked-item-color : #f3f3f3;
+     --checked-item-color : #58ff1e;
+
+     --faded-button-stroke-color : #999;
+
+     --stroke-width-standard : 2px;
+     --stroke-width-thick : 3px;
+     --stroke-width-thin : 1px;
+}
