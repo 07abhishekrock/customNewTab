@@ -1,18 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
 
-:html{
+html{
      --primary-font : 'Sora' , sans-serif;
-     --background-color : white;
-     --primary-color : black;
 
-     --highlighted-background-color : #232323;
+     --clr-secondary : white;
+     --clr-secondary-500 : lightgray;
+     --clr-secondary-300 : #424242;
+
+     --clr-primary-900 : black;
+
+     --clr-primary-600 : #232323;
      
-     --unchecked-item-color : #f3f3f3;
-     --checked-item-color : #58ff1e;
+     --clr-checked-item : #58ff1e;
+     --clr-unchecked-item : #ff4545;
 
-     --faded-button-stroke-color : #999;
+     --clr-remove : #ff4545;
+
+     --clr-faded-button-stroke : #999;
 
      --stroke-width-standard : 2px;
      --stroke-width-thick : 3px;
      --stroke-width-thin : 1px;
+}
+
+body{
+     background-color:var(--clr-primary-900);
+     color:var(--clr-secondary);
+     font-family:var(--primary-font);
+     margin:0px;
+}
+
+* , *::after , *::before{
+     box-sizing:border-box;
+}
+
+input , a , textarea , button{
+     color:inherit;
+     border:0px;
+     text-decoration:none;
+     outline:0px;
+     font-size:inherit;
+     font-family:inherit;
 }

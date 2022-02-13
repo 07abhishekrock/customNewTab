@@ -1,0 +1,16 @@
+.fancy-clock{
+     display:flex;
+     flex-flow:column;
+
+     justify-content: center;
+     align-items:center;
+
+     padding-top:4em;
+     padding-bottom:7em;
+}
+
+.fancy-clock__time{
+     font-size:6rem;
+     font-weight:200;
+     line-height:1.3em;
+}

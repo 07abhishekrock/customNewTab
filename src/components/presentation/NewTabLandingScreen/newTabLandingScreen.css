@@ -1,0 +1,25 @@
+div.page-wrapper{
+     display:flex;
+     overflow-x:hidden;
+     width:fit-content;
+}
+
+div.page-wrapper>*{
+     flex-shrink:0;
+}
+
+.add-task-button{
+     display:flex;
+     align-items:center;
+     gap:0.5em;
+
+
+}
+
+.add-task-button>* {
+     flex-shrink:0;
+}
+
+.add-task-button svg{
+     width:1em;
+}

@@ -12,7 +12,12 @@ module.exports = {
           filename : 'js/bundle.js'
      },
      resolve : {
-          extensions : ['.tsx' , '.ts' , '.js' , '.jsx' , '.css']
+          extensions : ['.tsx' , '.ts' , '.js' , '.jsx' , '.css'],
+          alias : {
+               "components" : path.resolve(__dirname , 'src/components'),
+               "utils" : path.resolve(__dirname , 'src/utils'),
+               "assets" : path.resolve(__dirname , 'src/assets'),
+          }
      },
      module : {
           rules : [
@@ -38,6 +43,19 @@ module.exports = {
                          },
                          "postcss-loader"
                     ],
+               },
+               {
+                    test: /\.(gif|png|jpe?g|ico|mp3)$/i,
+                    use: [
+                         {
+                              loader: "file-loader",
+                              options: { name: "assets/[name].[ext]" },
+                         },
+                    ],
+               },
+               {
+                    test : /\.svg$/i,
+                    use : ['@svgr/webpack']
                }
           ]
      },

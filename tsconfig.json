@@ -8,7 +8,10 @@
     "noEmit": true, // TS Compiler will not emit JS files
     "baseUrl": "src",
     "jsx" : "react",
+    "moduleResolution": "node",
     "paths": {
+      "assets/*" : ["assets/*"],
+      "components/ui/*": ["components/ui/*"]
     },
     "sourceMap": true, // enables the use of source maps for debuggers and error reporting etc
     "sourceRoot": "/", // Specify the location where a debugger should locate TypeScript files instead of relative source locations.

@@ -1,0 +1,32 @@
+.links-section{
+     display:flex;
+     flex-flow:column;
+     align-items:center;
+     justify-content: center;
+
+     gap:2em;
+     font-size:1.5rem;
+
+     height:100%;
+}
+
+.links-section .single-link{
+     display:block;
+     text-align:center;
+     cursor:pointer;
+
+     color:var(--clr-secondary-300);
+     transition:color 100ms ease-in;
+}
+
+
+.links-section .single-link:hover,
+.links-section .single-link:focus{
+     color:var(--clr-secondary);
+}
+
+.links-section .single-link svg{
+     width:3em;
+     height:3em;
+
+}
